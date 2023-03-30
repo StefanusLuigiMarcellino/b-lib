@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container{
+    width: 100%;
+    height: 45.1vw;
+    background-color: #E8E8E8;
+}
+
+.header{
+    width: 100%;
+    height: 5.4vw;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0vw -0.2vw 0.4vw rgba(0, 0, 0, 0.25)) drop-shadow(0vw 0.2vw 0.4vw rgba(0, 0, 0, 0.25));
+}
+
+.title{
+    font-size: 2.7vw;
+    font-weight: bold;
+    color: #548BCD;
+    letter-spacing: 0.15vw;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width:68.4vw;
+    height: 31.25vw;
+    margin-left: 15.625vw;
+    margin-top: 4.3vw;
+    position: relative;
+}
+
+.coverBox{
+    background-color: white;
+    width: 18.75vw;
+    height: 28vw;
+    display: flex;
+    border: 0.157vw solid #DDD0D0;
+    flex-direction: column;
+}
+
+.ebook-mark-container{
+    display: flex;
+    justify-content: right;
+    margin-top: 0.8vw;
+}
+
+.eImage{
+    width: 3.2vw;
+}
+
+.cover{
+    margin-left: 3.28vw;
+}
+
+.cover img{
+    width: 11.7vw;
+    height: 16vw;
+}
+
+.bContainer{
+    width: 16vw;
+}
+
+.bTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    font-weight: bold;
+    line-height: 1.4vw;
+    margin-top: 0.1vw;
+    margin-left: 2.5vw;
+    width: 13.5vw;
+    height: 5vw;
+    text-align: center;
+}
+
+.bWriter{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9vw;
+    font-weight: bold;
+    color: #A3A3A3;
+    margin-top: 0.4vw;
+    width: 13vw;
+    height: 2.8vw;
+    align-self: center;
+    text-align: center;
+}
+
+.form{
+    width: 46.1vw;
+    height: 31.25vw;
+    margin-left: 3.59vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+
+.fText{
+    font-weight: 600;
+    font-size: 1.64vw;
+    margin-top: 0.4vw;
+}
+
+.unchecked-radio{
+    color: red;
+}
+
+.line{
+    border-radius: 0.16vw;
+    margin-top: 0.468vw;
+}
+
+.input{
+    line-height: 3.5vw;
+    font-size: 1.41vw;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.02vw;
+}
+
+.input-radio{
+    display: flex;
+    align-items: center;
+}
+
+.space{
+    color: transparent;
+}
+
+input[type='radio']:after {
+    width: 1.95vw;
+    height: 1.95vw;
+    border-radius: 2.34vw;
+    top: -0.625vw;
+    left: 0vw;
+    position: relative;
+    background-color: #E8E8E8;
+    content: '';
+    visibility: visible;
+    border: 0.16vw solid #548BCD;
+    cursor: pointer;
+    float: left;
+}
+
+input[type='radio']:checked:after{
+    width: 1.95vw;
+    height: 1.95vw;
+    border-radius: 2.34vw;
+    top: -0.625vw;
+    left: 0vw;
+    position: relative;
+    background-color: #548BCD;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.16vw solid white;
+    cursor: pointer;
+}
+
+.reason{
+    font-weight: 600;
+    font-size: 1.65vw;
+    margin-top: 1.56vw;
+}
+
+.line{
+    border-radius: 0.16vw;
+    margin-top: 0.46vw;
+}
+
+.reasonText{
+    margin-top: 0.78vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+    background-color: #D7D7D7;
+    border-radius: 0.23vw;
+    height: 5.08vw;
+    border: 0.16vw solid #A3A3A3;
+}
+
+input::placeholder{
+    text-indent: 1vw;
+}
+
+input:focus{
+    outline: none;
+    text-indent: 1vw;
+}
+
+.alert{
+    margin-top: 0.625vw;
+    font-size: 0.94vw;
+    color: #A3A3A3;
+}
+
+.submit{
+    height: 3.5vw;
+    width: 9.375vw;
+    color: white;
+    background-color: #548BCD;
+    border: none;
+    border-radius: 1vw;
+    font-weight: bold;
+    align-self:flex-end;
+    font-size: 1.172vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #6fa4e5;
+}

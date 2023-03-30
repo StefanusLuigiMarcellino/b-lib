@@ -1,0 +1,296 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+#header-background{
+    width: 100%;
+    height: auto;
+    background: url(./Asset/sign-in-banner-img.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    width: 100%;
+}
+
+.alert-container{
+    display: none;
+    justify-content: center;
+}
+
+.alert{
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #548BCD;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 700;
+    z-index: 3;
+    position: absolute;
+    border-radius: 1vw;
+    width: 80%;
+    top: 3%;
+    left: 10%;
+    animation: alert_animation 1s;
+}
+
+@keyframes alert_animation {
+    from {top: -80%;}
+    to {top: 3%;}
+}
+
+.alert-container.active{
+    display: flex;
+}
+
+.closebtn{
+    color: #548BCD;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover{
+    color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.28vw;
+    gap: 4vw;
+    margin-left: -2.6vw;
+}
+
+.title{
+    color: white;
+    font-size: 3.56vw;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.logo-bca{
+    width: 13vw;
+    height: 4vw;
+}
+
+.line-1{
+    border: solid;
+    border-color: white;
+    height: 3.17vw;
+    border-width: 0.08vw;
+    opacity: 0.4;
+}
+
+.line-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.line-2{
+    border: solid;
+    border-color: white;
+    border-width: 0.08vw;
+    width: 63.31vw;
+    opacity: 0.4;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vw;
+    padding-bottom: 4vw;
+}
+
+.book-image{
+    position: relative;
+    width : 17vw;
+    height: auto;
+}
+
+.register-text{
+    position: relative;
+    font-size: 4.25vw;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#signin{
+    border: none;
+    background-color: #548BCD;
+    padding: 0.8vw 2.5vw;
+    border-radius: 1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+    transition: .3s;
+    margin-top: 1.5vw;
+}
+
+#signin:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #6fa4e5;
+}
+
+.rectangle{
+    margin-top: 0;
+    margin-bottom: 12.6vw;
+    width: auto;
+    height: auto;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.form-container {
+    margin: auto;
+    width: 54vw;
+    height: 38vw;
+    padding-top: 1.7vw;
+    margin-top: 6.3vw;
+    margin-left: 28vw;
+    margin-bottom: 4.2vw;
+    background-color: #fff;
+    border: 0vw solid;
+    border-radius: 2%;
+    box-shadow: 0.8vw 0vw 1.34vw 0.39vw rgba(0, 0, 0, 0.15), -0.63vw -0.63vw 1.34vw rgba(0, 0, 0, 0.15), 0vw 0.63vw 1.34vw rgba(0, 0, 0, 0.15);
+}
+
+.create-account{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #548BCD;
+    margin-top: 1.58vw;
+    margin-bottom: 2.37vw;
+    justify-content: left;
+}
+
+.create-account p{
+    font-size: 1vw;
+    color: black;
+    opacity: 70%;
+}
+
+.error{
+    color: red;
+}
+
+input{
+    font-size: 1vw;
+    font-weight: 300;
+    color: #7F7F7F;
+    width: 22.47vw;
+    height: 3.95vw;
+    margin-bottom: 0.39vw;
+    padding: 0vw 1.58vw 0vw 1.18vw;
+    border-top: #C4C4C4;
+    border-right: #C4C4C4;
+    border-left: #C4C4C4;
+    border: 0.158vw solid #548BCD;   
+}
+
+.form-input{
+    margin-top: 1.5vw;
+    justify-content: left;
+}
+
+.side-image{
+    margin-left: -3.4vw;
+    margin-top: 1vw;
+    margin-right: 0.5vw;
+    width: 29vw;
+    height : 40vw;
+    border-radius: 1vw;
+}
+
+.signup-link{
+    display: flex;
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+.signup-link p{
+    opacity: 70%;
+}
+
+.link-register{
+    margin-left: 0.5vw;
+    color:#548BCD;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-register:hover{
+    color: #6fa4e5;
+    transition: ease;
+}
+
+.footer-background{
+    width: 100%;
+    height: 14.7vw;
+    background: url(./Asset/Rectangle\ 31.png);
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer-text{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4.5vw;
+}
+
+.footer-text-group{
+    text-align: center;
+    font-weight: 400;
+}
+
+.footer-title{
+    font-size: 3vw;
+    color: white;
+}
+
+.footer-contact{
+    font-size: 1.18vw;
+    color: black;
+    margin-bottom: 0.42vw;
+}
+
+.footer-copyright{
+    font-size: 1.1vw;
+    color: black;
+    margin-bottom: 0.42vw;
+}
+
+.line-3{
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.959);
+    border-width: 0.03vw;
+    width: 63.3vw;
+    opacity: 0.4;
+    margin-bottom: 0.42vw;
+}
+
+.contact{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}

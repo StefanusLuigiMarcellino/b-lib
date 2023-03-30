@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/* header */
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    transition: ease-out .2s;
+}
+
+header.sticky{
+    background-color: #548acd;
+    transition: ease-in .2s;
+}
+
+section{
+    position: relative;
+}
+
+#header-background{
+    width: 100%;
+    height: 44.6vw;
+    background: url(./Asset/readBooks-myCatalogs-crop\ 1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    width: 100%;
+    position: relative;
+}
+
+.alert-container{
+    display: none;
+    justify-content: center;
+}
+
+.alert-container-return{
+    display: none;
+    justify-content: center;
+}
+
+.alert{
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #548BCD;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 700;
+    z-index: 3;
+    position: absolute;
+    border-radius: 1vw;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    animation: alert_animation 1s;
+}
+
+@keyframes alert_animation {
+    from {top: -80%;}
+    to {top: 10%;}
+}
+
+.alertReturn{
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #548BCD;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 700;
+    z-index: 3;
+    position: absolute;
+    border-radius: 1vw;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    animation: alert_animationReturn 1s;
+}
+
+@keyframes alert_animationReturn {
+    from {top: -80%;}
+    to {top: 10%;}
+}
+
+.alert-container.active{
+    display: flex;
+}
+
+.alert-container-return.active{
+    display: flex;
+}
+
+.closebtn{
+    color: #548BCD;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover{
+    color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    gap: 3.5vw;
+}
+
+.title{
+    color: white;
+    font-size: 3.56vw;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 1vw;
+}
+
+.logo-bca{
+    width: 8vw;
+    height: 3.2vw;
+    margin-left: -13.5vw;
+}
+
+.line-1{
+    border: solid;
+    border-color: white;
+    height: 3.17vw;
+    border-width: 0.08vw;
+    opacity: 0.4;
+}
+
+.line-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+header.sticky .line-container{
+    display: none;
+}
+
+.line-2{
+    border: solid;
+    border-color: white;
+    border-width: 0.08vw;
+    width: 68vw;
+    opacity: 0.4;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 1.58vw;
+    width: 10vw;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.header .active{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.signout{
+    border-color: #548BCD;
+    border-style: solid;
+    border-width: 0.25vw;
+    background-color: rgba(255, 255, 255, 0.882);
+    padding: 0.8vw 1.8vw;
+    border-radius: 1vw;
+    color: #548BCD;
+    font-weight: 700;
+    font-size: 1.3vw;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.signout:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.quote-container{
+    height: 30vw;
+    padding: 15vw 0vw 7vw 0vw;
+}
+
+.quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-text{
+    position: relative;
+    width: 86%;
+    font-size: 3.8vw;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.quote-name{
+    font-size: 3.5vw;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    padding-top: 2vw;
+}
+
+
+/* main content */
+
+.boxunderimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8vw;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.boxunderimage h1{
+    font-size: 2.4vw;
+    color: #548BCD;
+}
+
+.headerlinecontainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerline{
+    background-color: #548BCD;
+    height: 0.3vw;
+    width: 60vw;
+    margin-top: 1vw;
+}
+
+.list-container{
+    margin: auto;
+    width: 80.5%;
+}
+
+.book-container{
+    margin: 5vw 0vw 7vw 0vw;
+    justify-content: center;
+}
+
+.box-container{
+    width: 17.6vw;
+    background-color: #ffffff;
+    border: 0 solid;
+    border-radius: 1%;
+    box-shadow: 0.15vw 0.15vw 1vw rgba(0, 0, 0, 0.25), -0.15vw -0.15vw 1vw rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    margin: 1vw 1vw;
+    padding: 3.5vw 0vw 1.5vw 0vw;
+    transition: transform .3s;
+}
+
+.box-container:hover{
+    transform: scale(1.05);
+}
+
+.image-container{
+    height: 14vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.3vw;
+}
+
+.book-image{
+    width: 10vw;
+}
+
+.text-in-box{
+    margin: auto;
+    margin-top: 1vw;
+    text-align: center;
+    width: 86%;
+}
+
+.book-title{
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: black;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-author{
+    font-size: 1vw;
+    color: #A3A3A3;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ebook-mark-container{
+    display: sticky;
+    justify-content: right;
+    margin-left: 11.6vw;
+}
+
+.ebook-mark-img{
+    position: absolute;
+    margin-top: -1.8vw;
+    width: 3vw;
+}
+
+
+.no-books{
+    display: none;
+}
+
+.no-books.active{
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.6vw;
+    color: #548BCD;
+    font-weight: 600;
+}
+
+.currentImg, .finishedImg{
+    height: 20vw;
+    width: 13vw;
+}
+
+.currentText{
+    display: flex;
+    align-items: center;
+}
+
+.finishedText{
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+
+.rectangle-footer{
+    margin-top: 6vw;
+}
+
+.footer-background{
+    width: 100%;
+    height: 14.7vw;
+    background: url(./Asset/Rectangle\ 31.png);
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer-text{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4.5vw;
+}
+
+.footer-text-group{
+    text-align: center;
+    font-weight: 400;
+}
+
+.footer-title{
+    font-size: 3vw;
+    color: white;
+}
+
+.footer-contact{
+    font-size: 1.18vw;
+    color: black;
+    margin-bottom: 0.42vw;
+}
+
+.footer-copyright{
+    font-size: 1.1vw;
+    color: black;
+    margin-bottom: 0.42vw;
+}
+
+.line-3{
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.959);
+    border-width: 0.03vw;
+    width: 63.3vw;
+    opacity: 0.4;
+    margin-bottom: 0.42vw;
+}
+
+.contact{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}

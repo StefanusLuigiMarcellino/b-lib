@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.alert-container{
+    display: none;
+    justify-content: center;
+}
+
+.alert{
+    padding: 1.5vw;
+    background-color: rgba(230, 230, 230, 0.9);
+    color: rgb(255, 52, 52);
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 700;
+    z-index: 3;
+    position: absolute;
+    border-radius: 1vw;
+    border: 0.02vw solid #D1C9C7;
+    width: 80%;
+    top: 3%;
+    left: 10%;
+    animation: alert_animation 1s;
+}
+
+@keyframes alert_animation {
+    from {top: -80%;}
+    to {top: 3%;}
+}
+
+.alert-container.active{
+    display: flex;
+}
+
+.closebtn{
+    color: rgb(255, 52, 52);
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover{
+    color: black;
+}
+
+.flex-content{
+    display: flex;
+}
+
+.left-content{
+    height: auto;
+    width: 30%;
+    margin: 5vw 0vw 0vw 5vw;
+    padding-bottom: 5vw;
+}
+
+.book{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+}
+
+.book-image{
+    width: 20vw;
+    height: auto;
+}
+
+.borrow{
+    display: none;
+}
+
+.borrow.active{
+    display: block;
+}
+
+.borrow-book{
+    text-decoration: none;  
+    background-color:#548BCD;
+    border-radius: 1vw;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 7.2vw;
+    transition: transform .3s;
+}
+
+.borrow-book:hover{
+    transform: scale(1.05);
+}
+
+.hide {
+    display: none;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-top: 0.3vw;
+    width: 5vw;
+    color: #545454;
+    word-wrap: normal;
+}
+
+.readbutton:hover + .hide {
+    display: block;
+}
+
+.extendbutton:hover + .hide {
+    display: block;
+}
+
+.returnbutton:hover + .hide {
+    display: block;
+}
+
+.read-ext-ret{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vw;
+    height: 7.5vw;
+}
+
+.read-ext-ret.none{
+    display: none;
+}
+
+.readbutton svg{
+    color: #fff;
+    width: 3.5vw;
+    height: 3.5vw;
+    border: #548BCD solid;
+    padding: 0.3vw 0.3vw;
+    border-radius: 0.3vw;
+    background-color: #548BCD;
+}
+
+.readbutton svg:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    opacity: 90%;
+}
+
+.readbutton{
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: 5vw;
+}
+
+.extendtime{
+    display: none;
+}
+
+.extendtime.active{
+    display: block;
+}
+
+.extendbutton svg{
+    color: #fff;
+    width: 3.5vw;
+    height: 3.5vw;
+    border: #548BCD solid;
+    padding: 0.3vw 0.3vw;
+    border-radius: 0.3vw;
+    background-color: #548BCD;
+}
+
+.extendbutton svg:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    opacity: 90%;
+}
+
+.extendbutton{
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: 5vw;
+}
+
+.returnbutton svg{
+    color: #fff;
+    width: 3.5vw;
+    height: 3.5vw;
+    border: #548BCD solid;
+    padding: 0.3vw 0.3vw;
+    border-radius: 0.3vw;
+    background-color: #548BCD;
+}
+
+.returnbutton svg:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    opacity: 90%;
+}
+
+.returnbutton{
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: 5vw;
+}
+
+.daysremaining{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 1.4vw;
+}
+
+.daysremaining.none{
+    display: none;
+}
+
+.right-content{
+    height: auto;
+    width: 60%;
+    margin: 5vw 5vw 5vw 1vw;
+}
+
+.book-title{
+    font-size: 2vw;
+}
+
+.book-author{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.line-at-right{
+    border: solid;
+    border-color: #548BCD;
+    opacity: 0.5;
+    width: 100%;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.bookdesc-title{
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+}
+
+.description{
+    font-size: 1.18vw;
+    text-align: justify;
+}
+
+.bookdetail-title{
+    font-size: 1.8vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.detail-container{
+    display: flex;
+}
+
+.detail-container h4{
+    font-size: 1.3vw;
+}
+
+.detail-container p{
+    margin-bottom: 1vw;
+    font-size: 1.18vw;
+}
+
+.left-detail{
+    width: 50%;
+}
+
+.right-detail{
+    width: 50%;
+}
+
+/* footer */
+
+.rectangle-footer{
+    margin-top: 6vw;
+}
+
+.footer-background{
+    width: 100%;
+    height: 14.7vw;
+    background: url(./Asset/Rectangle\ 31.png);
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer-text{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4.5vw;
+}
+
+.footer-text-group{
+    text-align: center;
+    font-weight: 400;
+}
+
+.footer-title{
+    font-size: 3vw;
+    color: white;
+}
+
+.footer-contact{
+    font-size: 1.18vw;
+    color: black;
+    margin-bottom: 0.42vw;
+}
+
+.footer-copyright{
+    font-size: 1.1vw;
+    color: black;
+    margin-bottom: 0.42vw;
+}
+
+.line-3{
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.959);
+    border-width: 0.03vw;
+    width: 63.3vw;
+    opacity: 0.4;
+    margin-bottom: 0.42vw;
+}
+
+.contact{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}
